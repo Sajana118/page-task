@@ -47,5 +47,6 @@ import overlaypage from './overlay-page.vue';
   width: 137px;
   box-shadow:6px 8px 8px 3px rgba(0,0,0,0.25);
   font-size: 15px;
+  cursor: pointer;
 }
 </style>
