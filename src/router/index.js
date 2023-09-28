@@ -1,7 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Homepage from "@/components/Home-page.vue";
-import page from "@/components/reservation-page.vue";
 import overlaypage from "@/components/overlay-page.vue";
+import formdata from "@/components/form-data.vue";
+import informatiom from "@/components/infor-mation.vue";
 const routes = [
   {
     path: '/',
@@ -10,16 +11,20 @@ const routes = [
   },
 
   {
-    path: '/reservation-page',
-    name: 'page',
-    component:page,
-  },
-  {
     path: '/overlay-page',
     name: 'overlay',
     component:overlaypage,
   },
-
+  {
+    path: '/form-data',
+    name: 'form-data',
+    component:formdata,
+  },
+  {
+    path: '/infor-mation',
+    name: 'infor-mation',
+    component:informatiom,
+  },
 
 ]
 
