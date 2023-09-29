@@ -2,7 +2,7 @@
   <div class="first-page">
     <h1>Welcome to Reservation Homepage</h1>
     <button class="btn" @click="openModal">Enter the Page</button>
-    <overlaypage :showModal="isModalOpen" @close="closeModal" />
+    <overlaypage :showModal="isModalOpen" @CloseButtonClicked="getCloseButton"/>
   </div>
 
 </template>
@@ -10,25 +10,28 @@
 <script>
 import overlaypage from './overlay-page.vue';
 
+export default {
+  data() {
+    return {
+      isModalOpen: false,
+    };
+  },
+  methods: {
+    openModal() {
+      this.isModalOpen = true;
+    },
+    getCloseButton(event) {
+      console.log(event)
+      if (event === true) {
+        this.isModalOpen = false
+      }
+    },
+  },
+  components: {
+    overlaypage,
 
-  export default {
-    data() {
-      return {
-        isModalOpen: false,
-      };
-    },
-    methods: {
-      openModal() {
-        this.isModalOpen = true;
-      },
-      closeModal() {
-        this.isModalOpen = false;
-      },
-    },
-    components: {
-      overlaypage,
-    },
-  };
+  },
+};
 </script>
 <style>
 .first-page{
@@ -47,5 +50,6 @@ import overlaypage from './overlay-page.vue';
   width: 137px;
   box-shadow:6px 8px 8px 3px rgba(0,0,0,0.25);
   font-size: 15px;
+  cursor: pointer;
 }
 </style>
