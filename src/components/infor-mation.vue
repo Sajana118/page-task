@@ -122,4 +122,33 @@ export default {
 .notes p {
   margin: 0;
 }
+@media screen and (max-width: 1476px) {
+  .information{
+    height: 572px;
+    width: 400px;
+  }
+
+}
+@media screen and (max-width: 993px) {
+.information{
+  width: 300px;
+}
+  .contact-info{
+    width: 200px;
+  }
+  .contact-list{
+    width: 150px;
+    font-size: 12px;
+  }
+  .formField{
+    width: 120px;
+    font-size: 13px;
+  }
+  .age{
+    font-size: 13px;
+    top: 10px;
+  }
+
+
+}
 </style>

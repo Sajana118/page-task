@@ -43,10 +43,7 @@ export default {
       this.$emit('CloseButtonClicked', this.isCloseButtonClicked)
     },
     register() {
-      this.$store.commit('setFormData', {
-
-      });
-
+      this.$store.commit('setMessage', 'asdasd');
     },
   },
 };
@@ -107,5 +104,21 @@ body {
   width: 250px;
   height: 40px;
   border-radius: 10px;
+}
+
+@media screen and (max-width: 1476px) {
+  .modal{
+   width: 1000px;
+
+  }
+  .nav-bar{
+    width: 98%;
+    padding:10px ;
+  }
+}
+@media screen and (max-width: 993px) {
+  .modal{
+    width: 832px;
+  }
 }
 </style>
