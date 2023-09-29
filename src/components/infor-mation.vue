@@ -4,7 +4,7 @@
       <div class="head">
         <h2>患者情報</h2></div>
       <div class="button">
-        <button class="click-btn">患者検索</button>
+        <button class="click-btn" @click="closed">患者検索</button>
       </div>
     </div>
     <div class="medicalReport">

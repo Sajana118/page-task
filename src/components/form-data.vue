@@ -182,7 +182,7 @@
   border: 2px solid #5e749b;
 }
 .formData{
-  background-color: #3753b1;
+  background-color: #41a2e1;
   color: white;
   width: 110px;
   border-radius: 4px;
@@ -191,7 +191,7 @@
   font-size: 1.2rem ;
 }
 .button2{
-  background-color: #3753b1;
+  background-color: #41a2e1;
   color: white;
   width: 57px;
   border-radius: 4px;
@@ -200,7 +200,7 @@
   font-size: 1.2rem;
 }
 .button3{
-  background-color: #3753b1;
+  background-color: #41a2e1;
   color: white;
   width: 130px;
   border-radius: 4px;
@@ -209,7 +209,7 @@
   font-size: 1.2rem;
 }
 .button4{
-  background-color: #3753b1;
+  background-color: #41a2e1;
   color: white;
   width: 57px;
   border-radius: 4px;

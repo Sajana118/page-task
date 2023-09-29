@@ -13,8 +13,8 @@
           <information/>
         </div>
           <div class="footer">
-          <button name="submitButton" class="btn">閉じる</button>
-          <button name="submitButton" class="btn">予約登録</button>
+          <button name="closeButton" class="btn" @click="closePage">閉じる</button>
+          <button name="submitButton" class="btn" @click="register">予約登録</button>
         </div>
   </div>
     </div>
@@ -27,8 +27,8 @@ import information from './infor-mation.vue';
 import formdata from './form-data.vue';
 
 export default {
-  data(){
-    return{
+  data() {
+    return {
       isCloseButtonClicked: false
     }
   },
@@ -38,13 +38,18 @@ export default {
   },
   props: ['showModal'],
   methods: {
-   closePage(){
-     this.isCloseButtonClicked= true
-     this.$emit('CloseButtonClicked',this.isCloseButtonClicked)
-   }
-  },
+    closePage() {
+      this.isCloseButtonClicked = true
+      this.$emit('CloseButtonClicked', this.isCloseButtonClicked)
+    },
+    register() {
+      this.$store.commit('setFormData', {
 
-}
+      });
+
+    },
+  },
+};
 </script>
 
 <style scoped>
