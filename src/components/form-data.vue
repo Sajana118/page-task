@@ -304,4 +304,82 @@
   width: 387px;
   align-items: center;
 }
+
+@media screen and (max-width: 1476px) {
+.data{
+  width: 60%;
+}
+  .selection{
+    width: 100%
+  }
+  .option{
+    gap: 1%;
+    width: 410px;
+  }
+  .legend{
+  }
+  .components{
+    width: 8px;
+  }
+  .formData{
+    width: 70px;
+    font-size: 12px;
+  }
+  .start-time{
+    width: 250px;
+    font-size: 15px;
+  }
+  .button2{
+    width: 40px;
+    font-size: 12px;
+  }
+  .button3{
+    width: 90px;
+    font-size: 12px;
+  }
+  .button4{
+    width: 45px;
+    height: 29px;
+    font-size: 12px;
+  }
+}@media screen and (max-width: 993px) {
+.data{
+  width: 563px;
+}
+  .number .date{
+    height: 90px;
+    font-size: 12px;
+  }
+  .inputField{
+    font-size: 14px;
+  }
+  .token{
+    font-size: 9px;
+  }
+  .select{
+      bottom: 10px;
+  }
+  .text .btn{
+    height: 30px;
+    font-size: 13px;
+    width: 143px;
+  }
+  .input {
+    width: 369px;
+    padding-left: 121px;
+  }
+  .option{
+    width: 294px;
+    font-size: 10px ;
+  }
+  .column-side{
+    font-size: 12px;
+  }
+  .column{
+    display: flex;
+    gap: 10px;
+
+  }
+}
+
 </style>
