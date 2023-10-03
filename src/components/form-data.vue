@@ -234,13 +234,6 @@
   align-items: center;
   height: 40px;
 }
-.time-btn {
-  background-color: #3753b1;
-  color: white;
-  border-radius: 4px;
-  height: 30px;
-  border: none;
-}
 
 .text {
   display: flex;
@@ -266,8 +259,8 @@
   padding: 0 20px;
 }
 .input .input-text {
-  height: 60px;
-  width: 480px;
+  height: 100px;
+  width: 84%;
   border-radius: 10px;
   border-color: #cbcbbe;
   font-size: 1rem;
@@ -342,7 +335,8 @@
     height: 29px;
     font-size: 12px;
   }
-}@media screen and (max-width: 993px) {
+}
+@media screen and (max-width: 993px) {
 .data{
   width: 563px;
 }
@@ -377,9 +371,68 @@
   }
   .column{
     display: flex;
-    gap: 10px;
-
+    gap: 1%;
   }
+}
+  @media screen and (max-width: 845px) {
+  .data{
+    width: 58%;
+  }
+    .list{
+      height: 23px;
+      font-size: 11px;
+      width: 130%;
+    }
+    .main{
+      height: 50px;
+      font-size: 15px;
+    }
+    .number .date{
+      width: 47%;
+      height: 76px;
+    }
+    .inputField{
+      width: 80%;
+    }
+    .link{
+      width: 80%;
+    }
+    .select{
+      font-size: 11px;
+    }
+    .legend{
+      font-size: 11px;
+    }
+   .start-time{
+     font-size: 11px;
+   }
+   .info{
+     width:186px;
+   }
+   .button3{
+     width: 72px;
+   }
+   .text{
+     font-size: 10px;
+   }
+   .text .btn{
+     width: 112px;
+     font-size: 10px;
+   }
+   .input{
+     width: 64%;
+   }
+   .option{
+     display: flex;
+     gap: 0%;
+   }
+   .column{
+     width: 19%;
+   }
+
+}
+@media screen and (max-width: 845px) {
+
 }
 
 </style>

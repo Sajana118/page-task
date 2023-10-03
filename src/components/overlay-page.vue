@@ -121,4 +121,18 @@ body {
     width: 832px;
   }
 }
+@media screen and (max-width: 845px) {
+  .modal{
+    height: 641px;
+    width: 84%;
+  }
+  .nav-bar{
+    height: 31px;
+    width: 97.5%;
+    font-size: 11px;
+  }
+
+
+}
+
 </style>
