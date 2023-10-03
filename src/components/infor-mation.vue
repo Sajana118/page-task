@@ -54,7 +54,7 @@ export default {
 .information {
   background-color: white;
   border-radius: 10px;
-  height: 500px;
+  height: 551px;
   width: 38%;
 }
 .custom {
@@ -131,24 +131,42 @@ export default {
 }
 @media screen and (max-width: 993px) {
 .information{
-  width: 300px;
+  width: 288px;
+  height: 500px;
 }
   .contact-info{
-    width: 200px;
+    width: 100%;
   }
   .contact-list{
     width: 150px;
-    font-size: 12px;
+    font-size: 10px;
   }
   .formField{
-    width: 120px;
+    width: 88%;
     font-size: 13px;
   }
   .age{
+    display: flex;
     font-size: 13px;
-    top: 10px;
-  }
+    padding-top: 27px;
+    width: 21%;
 
+  }
+}
+@media screen and (max-width: 845px) {
+  .information{
+    height: 454px;
+    width: 41%;
+  }
+  .custom{
+    font-size: 13px;
+  }
+  .numberField{
+    width: 42%;
+  }
+  .suggestionBox .text{
+    height: 78px;
+  }
 
 }
 </style>
